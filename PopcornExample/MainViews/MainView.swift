@@ -3,12 +3,13 @@
 //
 
 import SwiftUI
+import Popcorn
 
 struct MainView: View {
     var body: some View {
         ZStack {
             BackgroundView()
             ContentView()
-        }.ignoresSafeArea(.keyboard)
+        }
     }
 }

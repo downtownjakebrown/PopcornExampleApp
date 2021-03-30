@@ -48,11 +48,11 @@ struct MyMessagePrompt: View {
     
 }
 
-// MARK: - Preview
-#if DEBUG
-struct MyMessagePrompt_Previews: PreviewProvider {
-    static var previews: some View {
-        MyMessagePrompt().environmentObject(Popcorn(popups: []))
-    }
-}
-#endif
+//// MARK: - Preview
+//#if DEBUG
+//struct MyMessagePrompt_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyMessagePrompt().environmentObject(Popcorn(popups: []))
+//    }
+//}
+//#endif

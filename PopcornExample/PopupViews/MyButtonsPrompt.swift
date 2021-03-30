@@ -63,11 +63,11 @@ struct MyButtonsPrompt: View {
 
 }
 
-// MARK: - Preview
-#if DEBUG
-struct MyButtonsPrompt_Previews: PreviewProvider {
-    static var previews: some View {
-        MyButtonsPrompt().environmentObject(Popcorn(popups: []))
-    }
-}
-#endif
+//// MARK: - Preview
+//#if DEBUG
+//struct MyButtonsPrompt_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyButtonsPrompt().environmentObject(Popcorn(popups: []))
+//    }
+//}
+//#endif

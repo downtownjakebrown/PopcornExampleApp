@@ -46,7 +46,9 @@ struct ContentView: View {
             
             Spacer()
             
-        }.padding(.horizontal)
+        }
+        .padding(.horizontal)
+        .ignoresSafeArea(.keyboard)
         
     }
 }

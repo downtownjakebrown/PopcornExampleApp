@@ -67,12 +67,12 @@ struct MyGetTextPrompt: View {
     }
 
 }
-
-// MARK: - Preview
-#if DEBUG
-struct MyGetTextPrompt_Previews: PreviewProvider {
-    static var previews: some View {
-        MyGetTextPrompt().environmentObject(Popcorn(popups: []))
-    }
-}
-#endif
+//
+//// MARK: - Preview
+//#if DEBUG
+//struct MyGetTextPrompt_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyGetTextPrompt().environmentObject(Popcorn(popups: []))
+//    }
+//}
+//#endif

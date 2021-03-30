@@ -34,17 +34,17 @@ struct MyBannerToast: View {
     }
 }
 
-// MARK: - Preview
-#if DEBUG
-struct PopcornBannerToast_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack {
-            Color.gray.ignoresSafeArea()
-            VStack {
-                MyBannerToast()
-                Spacer()
-            }.environmentObject(Popcorn(popups: []))
-        }
-    }
-}
-#endif
+//// MARK: - Preview
+//#if DEBUG
+//struct PopcornBannerToast_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ZStack {
+//            Color.gray.ignoresSafeArea()
+//            VStack {
+//                MyBannerToast()
+//                Spacer()
+//            }.environmentObject(Popcorn(popups: []))
+//        }
+//    }
+//}
+//#endif
