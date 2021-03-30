@@ -9,14 +9,14 @@ import Popcorn
 struct PopcornExampleApp: App {
     
     let packet = PopcornPacket {
-        MyButtonsPrompt()
-        MyGetTextPrompt()
-        MyMessagePrompt()
-        MyMessageBanner()
+        ButtonsPrompt()
+        GetTextPrompt()
+        MessagePrompt()
+        MessageBanner()
     }
     
     let seasoning = PopcornSeasoning(
-        corners: .rounded,
+        corners: .capsule,
         colors: PopcornColorScheme(
             fillColor: .paletteWhite,
             textColor: .paletteBlack,
@@ -34,21 +34,3 @@ struct PopcornExampleApp: App {
     }
     
 }
-
-
-/*
-// The style of the app’s popups. You define the
-// style of the popups global, then the style
-// properties are assigned to the popups internally.
-let popcornStyle = PopcornStyle(
-    corners: .rounded,
-    colors: PopcornColorScheme(
-        fillColor: .paletteWhite,
-        textColor: .paletteBlack,
-        buttonColorPrimary: .paletteRed,
-        buttonColorSecondary: .paletteTan,
-        buttonTextColor: .paletteWhite,
-        backgroundColor: .paletteFade
-    )
-)
-*/

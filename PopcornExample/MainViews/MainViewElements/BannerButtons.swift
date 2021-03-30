@@ -12,7 +12,7 @@ struct BannerButtons: View {
     var body: some View {
         VStack(spacing: 10) {
             PopupButton(label: "PopcornBannerToast", color: .paletteRed) {
-                popcorn.currentBanner = MyMessageBanner.self
+                popcorn.currentBanner = MessageBanner.self
             }
         }.padding(.bottom, 5)
     }

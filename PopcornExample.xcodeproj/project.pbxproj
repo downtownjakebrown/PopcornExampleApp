@@ -17,12 +17,11 @@
 		97C853E825FA601000D6BB2B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E425FA601000D6BB2B /* BackgroundView.swift */; };
 		97C853E925FA601000D6BB2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E525FA601000D6BB2B /* ContentView.swift */; };
 		97C853EA25FA601000D6BB2B /* PromptButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E625FA601000D6BB2B /* PromptButtons.swift */; };
-		97C853F025FA602200D6BB2B /* MyGetTextPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EC25FA602200D6BB2B /* MyGetTextPrompt.swift */; };
-		97C853F125FA602200D6BB2B /* MyMessagePrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853ED25FA602200D6BB2B /* MyMessagePrompt.swift */; };
-		97C853F225FA602200D6BB2B /* MyButtonsPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EE25FA602200D6BB2B /* MyButtonsPrompt.swift */; };
-		97C853F325FA602200D6BB2B /* PopupNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EF25FA602200D6BB2B /* PopupNameList.swift */; };
+		97C853F025FA602200D6BB2B /* GetTextPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */; };
+		97C853F125FA602200D6BB2B /* MessagePrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853ED25FA602200D6BB2B /* MessagePrompt.swift */; };
+		97C853F225FA602200D6BB2B /* ButtonsPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */; };
 		97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540125FA87BD00D6BB2B /* Utils+Colors.swift */; };
-		97C8540725FA8EC500D6BB2B /* MyMessageBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540625FA8EC500D6BB2B /* MyMessageBanner.swift */; };
+		97C8540725FA8EC500D6BB2B /* MessageBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540625FA8EC500D6BB2B /* MessageBanner.swift */; };
 		97C8540D25FACE6A00D6BB2B /* BannerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,14 +38,13 @@
 		97C853E425FA601000D6BB2B /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		97C853E525FA601000D6BB2B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97C853E625FA601000D6BB2B /* PromptButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptButtons.swift; sourceTree = "<group>"; };
-		97C853EC25FA602200D6BB2B /* MyGetTextPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGetTextPrompt.swift; sourceTree = "<group>"; };
-		97C853ED25FA602200D6BB2B /* MyMessagePrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMessagePrompt.swift; sourceTree = "<group>"; };
-		97C853EE25FA602200D6BB2B /* MyButtonsPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButtonsPrompt.swift; sourceTree = "<group>"; };
-		97C853EF25FA602200D6BB2B /* PopupNameList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupNameList.swift; sourceTree = "<group>"; };
+		97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTextPrompt.swift; sourceTree = "<group>"; };
+		97C853ED25FA602200D6BB2B /* MessagePrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePrompt.swift; sourceTree = "<group>"; };
+		97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsPrompt.swift; sourceTree = "<group>"; };
 		97C853FA25FA613F00D6BB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		97C853FB25FA615200D6BB2B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		97C8540125FA87BD00D6BB2B /* Utils+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+Colors.swift"; sourceTree = "<group>"; };
-		97C8540625FA8EC500D6BB2B /* MyMessageBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageBanner.swift; sourceTree = "<group>"; };
+		97C8540625FA8EC500D6BB2B /* MessageBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBanner.swift; sourceTree = "<group>"; };
 		97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,11 +122,10 @@
 		97C853DE25FA5F9600D6BB2B /* PopupViews */ = {
 			isa = PBXGroup;
 			children = (
-				97C853EF25FA602200D6BB2B /* PopupNameList.swift */,
-				97C853EE25FA602200D6BB2B /* MyButtonsPrompt.swift */,
-				97C853EC25FA602200D6BB2B /* MyGetTextPrompt.swift */,
-				97C853ED25FA602200D6BB2B /* MyMessagePrompt.swift */,
-				97C8540625FA8EC500D6BB2B /* MyMessageBanner.swift */,
+				97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */,
+				97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */,
+				97C853ED25FA602200D6BB2B /* MessagePrompt.swift */,
+				97C8540625FA8EC500D6BB2B /* MessageBanner.swift */,
 			);
 			path = PopupViews;
 			sourceTree = "<group>";
@@ -229,17 +226,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C853F325FA602200D6BB2B /* PopupNameList.swift in Sources */,
 				97C853E825FA601000D6BB2B /* BackgroundView.swift in Sources */,
 				97C853E725FA601000D6BB2B /* PopupButton.swift in Sources */,
 				97C853E925FA601000D6BB2B /* ContentView.swift in Sources */,
 				97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */,
-				97C8540725FA8EC500D6BB2B /* MyMessageBanner.swift in Sources */,
-				97C853F225FA602200D6BB2B /* MyButtonsPrompt.swift in Sources */,
+				97C8540725FA8EC500D6BB2B /* MessageBanner.swift in Sources */,
+				97C853F225FA602200D6BB2B /* ButtonsPrompt.swift in Sources */,
 				97C8540D25FACE6A00D6BB2B /* BannerButtons.swift in Sources */,
 				97C853EA25FA601000D6BB2B /* PromptButtons.swift in Sources */,
-				97C853F125FA602200D6BB2B /* MyMessagePrompt.swift in Sources */,
-				97C853F025FA602200D6BB2B /* MyGetTextPrompt.swift in Sources */,
+				97C853F125FA602200D6BB2B /* MessagePrompt.swift in Sources */,
+				97C853F025FA602200D6BB2B /* GetTextPrompt.swift in Sources */,
 				97C853E025FA5FD300D6BB2B /* MainView.swift in Sources */,
 				9754504A25F94A6F009C890F /* PopcornExampleApp.swift in Sources */,
 			);

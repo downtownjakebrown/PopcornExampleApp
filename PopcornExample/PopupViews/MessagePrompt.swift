@@ -5,7 +5,7 @@
 import SwiftUI
 import Popcorn
 
-struct MyMessagePrompt: View {
+struct MessagePrompt: View {
     
     @EnvironmentObject var popcorn: Popcorn
     
@@ -47,12 +47,3 @@ struct MyMessagePrompt: View {
     }
     
 }
-
-//// MARK: - Preview
-//#if DEBUG
-//struct MyMessagePrompt_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MyMessagePrompt().environmentObject(Popcorn(popups: []))
-//    }
-//}
-//#endif

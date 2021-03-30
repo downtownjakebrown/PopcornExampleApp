@@ -5,7 +5,7 @@
 import SwiftUI
 import Popcorn
 
-struct MyGetTextPrompt: View {
+struct GetTextPrompt: View {
     
     @EnvironmentObject var popcorn: Popcorn
     
@@ -67,12 +67,3 @@ struct MyGetTextPrompt: View {
     }
 
 }
-//
-//// MARK: - Preview
-//#if DEBUG
-//struct MyGetTextPrompt_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MyGetTextPrompt().environmentObject(Popcorn(popups: []))
-//    }
-//}
-//#endif
