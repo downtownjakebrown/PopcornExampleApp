@@ -22,7 +22,7 @@
 		97C853F225FA602200D6BB2B /* MyButtonsPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EE25FA602200D6BB2B /* MyButtonsPrompt.swift */; };
 		97C853F325FA602200D6BB2B /* PopupNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EF25FA602200D6BB2B /* PopupNameList.swift */; };
 		97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540125FA87BD00D6BB2B /* Utils+Colors.swift */; };
-		97C8540725FA8EC500D6BB2B /* MyBannerToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540625FA8EC500D6BB2B /* MyBannerToast.swift */; };
+		97C8540725FA8EC500D6BB2B /* MyMessageBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540625FA8EC500D6BB2B /* MyMessageBanner.swift */; };
 		97C8540D25FACE6A00D6BB2B /* BannerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		97C853FA25FA613F00D6BB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		97C853FB25FA615200D6BB2B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		97C8540125FA87BD00D6BB2B /* Utils+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+Colors.swift"; sourceTree = "<group>"; };
-		97C8540625FA8EC500D6BB2B /* MyBannerToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBannerToast.swift; sourceTree = "<group>"; };
+		97C8540625FA8EC500D6BB2B /* MyMessageBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageBanner.swift; sourceTree = "<group>"; };
 		97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +128,7 @@
 				97C853EE25FA602200D6BB2B /* MyButtonsPrompt.swift */,
 				97C853EC25FA602200D6BB2B /* MyGetTextPrompt.swift */,
 				97C853ED25FA602200D6BB2B /* MyMessagePrompt.swift */,
-				97C8540625FA8EC500D6BB2B /* MyBannerToast.swift */,
+				97C8540625FA8EC500D6BB2B /* MyMessageBanner.swift */,
 			);
 			path = PopupViews;
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 				97C853E725FA601000D6BB2B /* PopupButton.swift in Sources */,
 				97C853E925FA601000D6BB2B /* ContentView.swift in Sources */,
 				97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */,
-				97C8540725FA8EC500D6BB2B /* MyBannerToast.swift in Sources */,
+				97C8540725FA8EC500D6BB2B /* MyMessageBanner.swift in Sources */,
 				97C853F225FA602200D6BB2B /* MyButtonsPrompt.swift in Sources */,
 				97C8540D25FACE6A00D6BB2B /* BannerButtons.swift in Sources */,
 				97C853EA25FA601000D6BB2B /* PromptButtons.swift in Sources */,

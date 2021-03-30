@@ -7,17 +7,29 @@ import Popcorn
 
 @main
 struct PopcornExampleApp: App {
-
-    let popups = PopcornBucket {
+    
+    let packet = PopcornPacket {
         MyButtonsPrompt()
         MyGetTextPrompt()
         MyMessagePrompt()
-        MyBannerToast()
+        MyMessageBanner()
     }
+    
+    let seasoning = PopcornSeasoning(
+        corners: .rounded,
+        colors: PopcornColorScheme(
+            fillColor: .paletteWhite,
+            textColor: .paletteBlack,
+            buttonColorPrimary: .paletteRed,
+            buttonColorSecondary: .paletteTan,
+            buttonTextColor: .paletteWhite,
+            backgroundColor: .paletteFade
+        )
+    )
     
     var body: some Scene {
         WindowGroup {
-            MainView().popcornMaker(popups)
+            MainView().popcornMaker(packet, with: seasoning)
         }
     }
     
