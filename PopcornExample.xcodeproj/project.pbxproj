@@ -82,9 +82,10 @@
 		9754504825F94A6F009C890F /* PopcornExample */ = {
 			isa = PBXGroup;
 			children = (
-				9754505925F94AAE009C890F /* App */,
+				9754504925F94A6F009C890F /* PopcornExampleApp.swift */,
 				97C853DD25FA5F8B00D6BB2B /* MainViews */,
 				97C853DE25FA5F9600D6BB2B /* PopupViews */,
+				9754505925F94AAE009C890F /* Assets */,
 				97C8540025FA87AC00D6BB2B /* Utils */,
 				9754504F25F94A71009C890F /* Preview Content */,
 			);
@@ -99,15 +100,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9754505925F94AAE009C890F /* App */ = {
+		9754505925F94AAE009C890F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				9754504925F94A6F009C890F /* PopcornExampleApp.swift */,
 				9754504D25F94A71009C890F /* Assets.xcassets */,
 				9754505225F94A71009C890F /* Info.plist */,
 				9754505B25F94AD1009C890F /* LaunchScreen.storyboard */,
 			);
-			path = App;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		97C853DD25FA5F8B00D6BB2B /* MainViews */ = {
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */,
-				97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */,
 				97C853ED25FA602200D6BB2B /* MessagePrompt.swift */,
+				97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */,
 				97C8540625FA8EC500D6BB2B /* MessageBanner.swift */,
 			);
 			path = PopupViews;
@@ -371,7 +371,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PopcornExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 4SL8JB2S9S;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PopcornExample/App/Info.plist;
+				INFOPLIST_FILE = PopcornExample/Assets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,7 +393,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PopcornExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 4SL8JB2S9S;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PopcornExample/App/Info.plist;
+				INFOPLIST_FILE = PopcornExample/Assets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

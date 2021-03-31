@@ -5,60 +5,50 @@
 import SwiftUI
 import Popcorn
 
+///
 struct ButtonsPrompt: View {
     
     @EnvironmentObject var popcorn: Popcorn
     
-    @State private var headlineText = "Sure you want to continue?"
-    private let button1Text = "Yes"
-    private let button2Text = "No"
-    
-    @State private var button1Loading = false
-    @State private var button2Loading = false
-    
     var body: some View {
         PopcornButtonsPrompt(
-            headerView: popupImage,
-            headlineText: headlineText,
-            button1Text: button1Text,
-            button2Text: button2Text,
-            button1Loading: button1Loading,
-            button2Loading: button2Loading,
+            
+            headerImage: HeaderImage(),
+            headerText: "Sure you want to continue?",
+            headerTextColor: .black,
+            
+            button1Text: "Yes",
+            button1TextColor: .white,
+            button1Fill: Color.red,
+            button1Loading: false,
+            button1Action: { popcorn.dismissCurrentPopup() },
+            
+            button2Text: "No",
+            button2TextColor: .white,
+            button2Fill: Color.red,
+            button2Loading: false,
+            button2Action: { popcorn.dismissCurrentPopup() },
+            
             dragEnabled: true,
-            button1Action: {
-                button1Loading = true
-                headlineText = "OK! Continuing..."
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    popcorn.dismissCurrentPopup()
-                    button1Loading = false
-                }
-            },
-            button2Action: {
-                button2Loading = true
-                headlineText = "OK! Not continuing..."
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    popcorn.dismissCurrentPopup()
-                    button2Loading = false
-                }
-            },
-            dragDismissAction: {
-                popcorn.dismissCurrentPopup()
-            },
-            backgroundTapAction: {
-                popcorn.dismissCurrentPopup()
-            }
+            dragDismissAction: { popcorn.dismissCurrentPopup() },
+            
+            backgroundFill: Color.white,
+            backgroundTapAction: { popcorn.dismissCurrentPopup() }
+            
         )
     }
-    
-    private var popupImage: some View {
+
+}
+
+struct HeaderImage: View {
+    var body: some View {
         GeometryReader { g in
-            Text("😬")
-            .font(Font.system(size: g.size.height))
+            Circle()
+            .fill(Color.paletteRed)
             .frame(
                 width: g.size.width,
                 height: g.size.height
             )
         }
     }
-
 }

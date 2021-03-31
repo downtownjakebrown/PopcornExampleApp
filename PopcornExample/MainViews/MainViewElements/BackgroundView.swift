@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// Our app's background view
 struct BackgroundView: View {
     var body: some View {
         Color.white.ignoresSafeArea()

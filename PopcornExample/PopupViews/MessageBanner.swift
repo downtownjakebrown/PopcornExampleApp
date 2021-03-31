@@ -5,13 +5,17 @@
 import SwiftUI
 import Popcorn
 
+///
 struct MessageBanner: View {
     
     @EnvironmentObject var popcorn: Popcorn
     
     @State private var expandBanner: Bool = false
     
-    let messageText: String = "This is an example of a of a Popcorn banner. By default, the message only shows three lines of message text. But, if you tap this banner,\n\nIt expands to show even more! 😎 If you tap again it will collapse. If you drag up, the banner will be dismissed."
+    let messageText: String = "This is an example of a of a Popcorn banner. " +
+    "By default, the message only shows three lines of message text. But, if " +
+    "you tap this banner,\n\nIt expands to show even more! 😎 If you tap again, " +
+    "it will collapse. If you drag up, the banner will be dismissed."
     
     var body: some View {
         PopcornMessageBanner(

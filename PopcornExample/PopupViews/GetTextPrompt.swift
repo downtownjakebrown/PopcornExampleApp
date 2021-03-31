@@ -5,6 +5,7 @@
 import SwiftUI
 import Popcorn
 
+///
 struct GetTextPrompt: View {
     
     @EnvironmentObject var popcorn: Popcorn

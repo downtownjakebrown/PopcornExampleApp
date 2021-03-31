@@ -5,6 +5,7 @@
 import SwiftUI
 import Popcorn
 
+///
 struct BannerButtons: View {
     
     @EnvironmentObject var popcorn: Popcorn

@@ -3,8 +3,8 @@
 //
 
 import SwiftUI
-import Popcorn
 
+/// Our app's main view
 struct MainView: View {
     var body: some View {
         ZStack {
