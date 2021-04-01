@@ -5,7 +5,7 @@
 import SwiftUI
 import Popcorn
 
-/// A simple two-button prompt for our example app.
+/// A simple two-button prompt.
 struct ButtonsPrompt: View {
     
     /// The popcorn view model

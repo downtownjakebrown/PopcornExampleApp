@@ -5,7 +5,7 @@
 import SwiftUI
 import Popcorn
 
-/// A simple message prompt for our example app.
+/// A simple message prompt.
 struct MessagePrompt: View {
     
     /// The popcorn view model

@@ -5,7 +5,7 @@
 import SwiftUI
 import Popcorn
 
-/// A simple prompt to get text from a user for our example app.
+/// A simple prompt to get text from a user.
 struct GetTextPrompt: View {
     
     /// The popcorn view model
