@@ -5,24 +5,26 @@
 import SwiftUI
 import Popcorn
 
-///
+/// A simple message prompt for our example app.
 struct MessagePrompt: View {
     
+    /// The popcorn view model
     @EnvironmentObject var popcorn: Popcorn
     
+    /// The popup view body
     var body: some View {
         PopcornMessagePrompt(
             
-            headerImage: HeaderImage(),
-            headerText: "Hello",
-            headerTextColor: .black,
+            headerImage: PopcornIconView(),
+            headerText: "Hey There!",
+            headerTextColor: .popcornRed,
             
-            bodyText: "Hello",
-            bodyTextColor: .black,
+            bodyText: "Thanks for using popcorn. This is a simple message prompt.",
+            bodyTextColor: .popcornGray,
             
-            buttonText: "Dismiss",
+            buttonText: "Let's Go",
             buttonTextColor: .white,
-            buttonFill: Color.red,
+            buttonFill: LinearGradient(gradient: .popcornRed, startPoint: .top, endPoint: .bottom),
             buttonLoading: false,
             buttonAction: { popcorn.dismissCurrentPopup() },
             
@@ -36,6 +38,7 @@ struct MessagePrompt: View {
     }
     
 }
+
 
 // MARK: - Preview
 #if DEBUG

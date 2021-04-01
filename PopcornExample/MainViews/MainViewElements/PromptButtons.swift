@@ -12,13 +12,13 @@ struct PromptButtons: View {
     
     var body: some View {
         VStack(spacing: 10) {
-            PopupButton(label: "PopcornMessagePrompt", color: .paletteRed) {
+            PopupButton(label: "PopcornMessagePrompt", color: .popcornRed) {
                 popcorn.currentPopup = MessagePrompt.self
             }
-            PopupButton(label: "PopcornButtonsPrompt", color: .paletteRed) {
+            PopupButton(label: "PopcornButtonsPrompt", color: .popcornRed) {
                 popcorn.currentPopup = ButtonsPrompt.self
             }
-            PopupButton(label: "PopcornGetTextPrompt", color: .paletteRed) {
+            PopupButton(label: "PopcornGetTextPrompt", color: .popcornRed) {
                 popcorn.currentPopup = GetTextPrompt.self
             }
         }.padding(.bottom, 5)

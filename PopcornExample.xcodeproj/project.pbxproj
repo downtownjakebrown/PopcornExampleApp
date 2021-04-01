@@ -12,6 +12,7 @@
 		9754505125F94A71009C890F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9754505025F94A71009C890F /* Preview Assets.xcassets */; };
 		9754505C25F94AD1009C890F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9754505B25F94AD1009C890F /* LaunchScreen.storyboard */; };
 		978E208D25FD218F00318B98 /* Popcorn in Frameworks */ = {isa = PBXBuildFile; productRef = 978E208C25FD218F00318B98 /* Popcorn */; };
+		97BD5626261628FC002C8A45 /* PopcornIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD5625261628FC002C8A45 /* PopcornIcon.swift */; };
 		97C853E025FA5FD300D6BB2B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853DF25FA5FD300D6BB2B /* MainView.swift */; };
 		97C853E725FA601000D6BB2B /* PopupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E325FA601000D6BB2B /* PopupButton.swift */; };
 		97C853E825FA601000D6BB2B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E425FA601000D6BB2B /* BackgroundView.swift */; };
@@ -33,6 +34,7 @@
 		9754505225F94A71009C890F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9754505B25F94AD1009C890F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		978E208F25FD21A800318B98 /* Popcorn */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Popcorn; path = ../Popcorn; sourceTree = "<group>"; };
+		97BD5625261628FC002C8A45 /* PopcornIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornIcon.swift; sourceTree = "<group>"; };
 		97C853DF25FA5FD300D6BB2B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		97C853E325FA601000D6BB2B /* PopupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupButton.swift; sourceTree = "<group>"; };
 		97C853E425FA601000D6BB2B /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -106,8 +108,17 @@
 				9754504D25F94A71009C890F /* Assets.xcassets */,
 				9754505225F94A71009C890F /* Info.plist */,
 				9754505B25F94AD1009C890F /* LaunchScreen.storyboard */,
+				97BD5628261628FF002C8A45 /* IconViews */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		97BD5628261628FF002C8A45 /* IconViews */ = {
+			isa = PBXGroup;
+			children = (
+				97BD5625261628FC002C8A45 /* PopcornIcon.swift */,
+			);
+			path = IconViews;
 			sourceTree = "<group>";
 		};
 		97C853DD25FA5F8B00D6BB2B /* MainViews */ = {
@@ -122,8 +133,8 @@
 		97C853DE25FA5F9600D6BB2B /* PopupViews */ = {
 			isa = PBXGroup;
 			children = (
-				97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */,
 				97C853ED25FA602200D6BB2B /* MessagePrompt.swift */,
+				97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */,
 				97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */,
 				97C8540625FA8EC500D6BB2B /* MessageBanner.swift */,
 			);
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C853E825FA601000D6BB2B /* BackgroundView.swift in Sources */,
+				97BD5626261628FC002C8A45 /* PopcornIcon.swift in Sources */,
 				97C853E725FA601000D6BB2B /* PopupButton.swift in Sources */,
 				97C853E925FA601000D6BB2B /* ContentView.swift in Sources */,
 				97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */,

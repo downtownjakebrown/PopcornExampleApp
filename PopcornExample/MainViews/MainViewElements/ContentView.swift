@@ -5,9 +5,10 @@
 import SwiftUI
 import Popcorn
 
-/// 
+/// The main content of our app
 struct ContentView: View {
     
+    /// The popcorn view model
     @EnvironmentObject var popcorn: Popcorn
     
     var body: some View {

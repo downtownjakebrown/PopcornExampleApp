@@ -5,34 +5,38 @@
 import SwiftUI
 import Popcorn
 
-///
+/// A simple two-button prompt for our example app.
 struct ButtonsPrompt: View {
     
+    /// The popcorn view model
     @EnvironmentObject var popcorn: Popcorn
     
+    /// The popup view body
     var body: some View {
         PopcornButtonsPrompt(
             
-            headerImage: HeaderImage(),
+            headerImage: PopcornIconView(),
             headerText: "Sure you want to continue?",
-            headerTextColor: .black,
+            headerTextColor: .popcornRed,
             
             button1Text: "Yes",
-            button1TextColor: .white,
-            button1Fill: Color.red,
+            button1TextColor: .popcornWhite,
+            button1Fill: LinearGradient(gradient: .popcornRed, startPoint: .top, endPoint: .bottom),
             button1Loading: false,
             button1Action: { popcorn.dismissCurrentPopup() },
             
             button2Text: "No",
-            button2TextColor: .white,
-            button2Fill: Color.red,
+            button2TextColor: .popcornWhite,
+            button2Fill: LinearGradient(gradient: .popcornRed, startPoint: .top, endPoint: .bottom),
             button2Loading: false,
             button2Action: { popcorn.dismissCurrentPopup() },
+            
+            buttonStyle: .verticalStack,
             
             dragEnabled: true,
             dragDismissAction: { popcorn.dismissCurrentPopup() },
             
-            backgroundFill: Color.white,
+            backgroundFill: Color.popcornWhite,
             backgroundTapAction: { popcorn.dismissCurrentPopup() }
             
         )
@@ -40,15 +44,11 @@ struct ButtonsPrompt: View {
 
 }
 
-struct HeaderImage: View {
-    var body: some View {
-        GeometryReader { g in
-            Circle()
-            .fill(Color.paletteRed)
-            .frame(
-                width: g.size.width,
-                height: g.size.height
-            )
-        }
+// MARK: - Preview
+#if DEBUG
+struct ButtonsPrompt_Previews: PreviewProvider {
+    static var previews: some View {
+        ButtonsPrompt().environmentObject(PopcornPreview)
     }
 }
+#endif
