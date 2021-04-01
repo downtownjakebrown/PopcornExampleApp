@@ -5,66 +5,53 @@
 import SwiftUI
 import Popcorn
 
-///
+/// A simple prompt to get text from a user for our example app.
 struct GetTextPrompt: View {
     
+    /// The popcorn view model
     @EnvironmentObject var popcorn: Popcorn
     
-    private let headlineText = "What's your name?"
-    private let placeholderText = "enter name..."
-    private let buttonText = "Submit"
-    
+    /// The user-input text
     @State private var textFieldInput = ""
-    @State private var buttonLoading = false
     
+    /// The popup view body
     var body: some View {
         PopcornGetTextPrompt(
-            headerView: popupImage,
-            headlineText: headlineText,
-            textFieldPlaceholderText: placeholderText,
+    
+            headerImage: PopcornIconView(),
+            headerText: "What's your name?",
+            headerTextColor: .black,
+            
             textFieldInput: $textFieldInput,
-            keyboardType: .alphabet,
-            buttonText: buttonText,
-            buttonLoading: buttonLoading,
-            dragEnabled: true,
+            textFieldPlaceholderText: "enter name...",
+            textFieldTextColor: .black,
             textFieldOnChangeState: { _ in },
             textFieldOnChangeText: {},
             textFieldOnCommitText: {},
-            buttonAction: {
-                buttonLoading = true
-                textFieldInput = ""
-                hideKeyboard()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    buttonLoading = false
-                }
-            },
-            dragDismissAction: {
-                popcorn.dismissCurrentPopup()
-            },
-            backgroundTapAction: {
-                popcorn.dismissCurrentPopup()
-            }
+            textFieldKeyboardType: .alphabet,
+            
+            buttonText: "Submit",
+            buttonTextColor: .white,
+            buttonFill: LinearGradient(gradient: .popcornRed, startPoint: .top, endPoint: .bottom),
+            buttonLoading: false,
+            buttonAction: { popcorn.dismissCurrentPopup() },
+            
+            dragEnabled: true,
+            dragDismissAction: { popcorn.dismissCurrentPopup() },
+            
+            backgroundFill: Color.white,
+            backgroundTapAction: { popcorn.dismissCurrentPopup() }
+        
         )
-    }
-    
-    private func hideKeyboard() {
-        UIApplication.shared
-        .sendAction(#selector(UIResponder.resignFirstResponder),
-            to: nil,
-            from: nil,
-            for: nil
-        )
-    }
-    
-    private var popupImage: some View {
-        GeometryReader { g in
-            Text("🤔")
-            .font(Font.system(size: g.size.height))
-            .frame(
-                width: g.size.width,
-                height: g.size.height
-            )
-        }
     }
 
 }
+
+// MARK: - Preview
+#if DEBUG
+struct GetTextPrompt_Previews: PreviewProvider {
+    static var previews: some View {
+        GetTextPrompt().environmentObject(PopcornPreview)
+    }
+}
+#endif

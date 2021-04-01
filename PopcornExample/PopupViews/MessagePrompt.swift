@@ -17,10 +17,10 @@ struct MessagePrompt: View {
             
             headerImage: PopcornIconView(),
             headerText: "Hey There!",
-            headerTextColor: .popcornRed,
+            headerTextColor: .popcornBlack,
             
             bodyText: "Thanks for using popcorn. This is a simple message prompt.",
-            bodyTextColor: .popcornGray,
+            bodyTextColor: .popcornBlack,
             
             buttonText: "Let's Go",
             buttonTextColor: .white,
@@ -35,6 +35,7 @@ struct MessagePrompt: View {
             backgroundTapAction: { popcorn.dismissCurrentPopup() }
             
         )
+        
     }
     
 }

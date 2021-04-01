@@ -17,7 +17,7 @@ struct ButtonsPrompt: View {
             
             headerImage: PopcornIconView(),
             headerText: "Sure you want to continue?",
-            headerTextColor: .popcornRed,
+            headerTextColor: .popcornBlack,
             
             button1Text: "Yes",
             button1TextColor: .popcornWhite,
@@ -27,7 +27,7 @@ struct ButtonsPrompt: View {
             
             button2Text: "No",
             button2TextColor: .popcornWhite,
-            button2Fill: LinearGradient(gradient: .popcornRed, startPoint: .top, endPoint: .bottom),
+            button2Fill: LinearGradient(gradient: .popcornBlue, startPoint: .top, endPoint: .bottom),
             button2Loading: false,
             button2Action: { popcorn.dismissCurrentPopup() },
             
