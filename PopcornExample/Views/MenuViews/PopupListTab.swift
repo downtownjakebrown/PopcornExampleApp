@@ -28,7 +28,7 @@ fileprivate struct PopupListHeader: View {
     var body: some View {
         HStack {
             
-            Text("Popcorn Tester")
+            Text("Popcorn Example")
             .foregroundColor(.black)
             .font(.largeTitle)
             .bold()
