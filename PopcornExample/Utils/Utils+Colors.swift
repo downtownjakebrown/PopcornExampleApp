@@ -4,50 +4,75 @@
 
 import SwiftUI
 
-extension Color {
-    
-    /// A red color for our app's color palette
-    static let popcornRed = Color(#colorLiteral(red: 1, green: 0.3019607843, blue: 0.3254901961, alpha: 1))
-    /// A light red color for our app's color palette
-    static let popcornRedLight = Color(#colorLiteral(red: 1, green: 0.3960784314, blue: 0.4156862745, alpha: 1))
-    /// A lighter red color for our app's color palette
-    static let popcornRedLighter = Color(#colorLiteral(red: 1, green: 0.5098039216, blue: 0.5098039216, alpha: 1))
-    /// A lighter red color for our app's color palette
-    static let popcornRedLightest = Color(#colorLiteral(red: 1, green: 0.6274509804, blue: 0.6274509804, alpha: 1))
-    
-    /// A red color for our app's color palette
-    static let popcornYellow = Color(#colorLiteral(red: 1, green: 0.8196078431, blue: 0.2823529412, alpha: 1))
-    /// A light red color for our app's color palette
-    static let popcornYellowLight = Color(#colorLiteral(red: 1, green: 0.8941176471, blue: 0.6431372549, alpha: 1))
-    
-    /// A blue color for our app's color palette
-    static let popcornBlue = Color(#colorLiteral(red: 0, green: 0.6039215686, blue: 0.5843137255, alpha: 1))
-    /// A light blue color for our app's color palette
-    static let popcornBlueLight = Color(#colorLiteral(red: 0, green: 0.6980392157, blue: 0.6745098039, alpha: 1))
-    
-    /// A gray color for our app's color palette.
-    static let popcornGray = Color(#colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1))
-    /// A light gray color for our app's color palette.
-    static let popcornGrayLight = Color(#colorLiteral(red: 0.6642242074, green: 0.6642400622, blue: 0.6642315388, alpha: 1))
-    
-    /// A white color for our app's color palette.
-    static let popcornWhite = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-    /// A black color for our app's color palette.
-    static let popcornBlack = Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
-    
-}
-
 extension Gradient {
     
     /// A light red to red color gradient
-    static let popcornRed = Gradient(colors: [.popcornRedLight, .popcornRed])
-    /// A lightest red to lighter red color gradient
-    static let popcornRedLight = Gradient(colors: [.popcornRedLightest, .popcornRedLighter])
+    static let red = Gradient(colors: [Color.red.brightness(0.15), Color.red])
+    /// A light orange to orange color gradient
+    static let orange = Gradient(colors: [Color.orange.brightness(0.15), Color.orange])
     /// A light yellow to yellow color gradient
-    static let popcornYellow = Gradient(colors: [.popcornYellowLight, .popcornYellow])
+    static let yellow = Gradient(colors: [Color.yellow.brightness(0.15), Color.yellow])
+    /// A light green to green color gradient
+    static let green = Gradient(colors: [Color.green.brightness(0.15), Color.green])
     /// A light blue to blue color gradient
-    static let popcornBlue = Gradient(colors: [.popcornBlueLight, .popcornBlue])
-    /// A light gray to gray color gradient
-    static let popcornGray = Gradient(colors: [.popcornGrayLight, .popcornGray])
+    static let blue = Gradient(colors: [Color.blue.brightness(0.15), Color.blue])
+    /// A light indigo to indigo color gradient
+    static let indigo = Gradient(colors: [Color.indigo.brightness(0.15), Color.indigo])
+    /// A light purple to purple color gradient
+    static let purple = Gradient(colors: [Color.purple.brightness(0.15), Color.purple])
+    /// A light teal to teal color gradient
+    static let teal = Gradient(colors: [Color.teal.brightness(0.15), Color.teal])
     
 }
+
+extension Color {
+    
+    /// An indigo color.
+    static let indigo = Color(UIColor.systemIndigo)
+    /// A teal color.
+    static let teal = Color(UIColor.systemTeal)
+    
+}
+
+extension Color {
+    
+    /// Adjusts the brightness of a color.
+    /// - Parameter brightness: The amount to increase or decrease the brightness of a color. Should be a value between -1.0 and 1.0.
+    /// - Returns: The modified color.
+    func brightness(_ brightness: Double) -> Color {
+        
+        let (r,g,b,a) = getComponentsRGBA(self)
+        
+        let adjustedColor = Color(
+            .displayP3,
+            red: min(max((r + brightness), 0), 1),
+            green: min(max((g + brightness), 0), 1),
+            blue: min(max((b + brightness), 0), 1),
+            opacity: a
+        )
+        
+        return adjustedColor
+        
+    }
+    
+    /// Gets the RGBA components of a color.
+    /// - Parameter color: The color from which the components are extracted.
+    /// - Returns: The red, blue, green, and alpha components of the color
+    func getComponentsRGBA(_ color: Color) -> (Double, Double, Double, Double) {
+        
+        let color = UIColor(color)
+        
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        
+        color.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        return (Double(r),Double(g),Double(b),Double(a))
+        
+    }
+    
+}
+
+

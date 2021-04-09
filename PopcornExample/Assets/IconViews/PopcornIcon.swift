@@ -1,7 +1,14 @@
 //
 // See LICENSE file for this package’s licensing information.
 //
-// Made Using SwiftyIllustrator
+
+//
+// This icon was made with the help of SwiftyIllustrator.
+//
+// SwiftyIllustrator is a tool for quickly converting Adobe
+// Illustrator shapes into SwiftUI code. Learn more by visiting
+// the below GitHub repository.
+//
 // https://github.com/downtownjakebrown/SwiftyIllustrator.git
 //
 
@@ -11,11 +18,11 @@ import SwiftUI
 struct PopcornIconView: View {
     var body: some View {
         ZStack {
-            PopcornIconElement5().fill(LinearGradient(gradient: .popcornYellow, startPoint: .bottom, endPoint: .top))
-            PopcornIconElement4().fill(LinearGradient(gradient: .popcornYellow, startPoint: .top, endPoint: .bottom))
-            PopcornIconElement3().fill(LinearGradient(gradient: .popcornRed, startPoint: .top, endPoint: .bottom))
-            PopcornIconElement2().fill(Color.popcornWhite)
-            PopcornIconElement1().fill(Color.popcornWhite)
+            PopcornIconElement5().fill(LinearGradient(gradient: .yellow, startPoint: .top, endPoint: .bottom))
+            PopcornIconElement4().fill(Color.yellow)
+            PopcornIconElement3().fill(LinearGradient(gradient: .red, startPoint: .bottom, endPoint: .top))
+            PopcornIconElement2().fill(Color.white)
+            PopcornIconElement1().fill(Color.white)
         }
     }
 }

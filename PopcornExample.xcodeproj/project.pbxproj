@@ -14,16 +14,14 @@
 		978E208D25FD218F00318B98 /* Popcorn in Frameworks */ = {isa = PBXBuildFile; productRef = 978E208C25FD218F00318B98 /* Popcorn */; };
 		97BD5626261628FC002C8A45 /* PopcornIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD5625261628FC002C8A45 /* PopcornIcon.swift */; };
 		97C853E025FA5FD300D6BB2B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853DF25FA5FD300D6BB2B /* MainView.swift */; };
-		97C853E725FA601000D6BB2B /* PopupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E325FA601000D6BB2B /* PopupButton.swift */; };
-		97C853E825FA601000D6BB2B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E425FA601000D6BB2B /* BackgroundView.swift */; };
-		97C853E925FA601000D6BB2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E525FA601000D6BB2B /* ContentView.swift */; };
-		97C853EA25FA601000D6BB2B /* PromptButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853E625FA601000D6BB2B /* PromptButtons.swift */; };
 		97C853F025FA602200D6BB2B /* GetTextPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */; };
 		97C853F125FA602200D6BB2B /* MessagePrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853ED25FA602200D6BB2B /* MessagePrompt.swift */; };
 		97C853F225FA602200D6BB2B /* ButtonsPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */; };
 		97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540125FA87BD00D6BB2B /* Utils+Colors.swift */; };
 		97C8540725FA8EC500D6BB2B /* MessageBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540625FA8EC500D6BB2B /* MessageBanner.swift */; };
-		97C8540D25FACE6A00D6BB2B /* BannerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */; };
+		97E16F072620EA84007A2218 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E16F062620EA84007A2218 /* TabMenu.swift */; };
+		97E16F0C2620EBC0007A2218 /* ReadMeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E16F0B2620EBC0007A2218 /* ReadMeTab.swift */; };
+		97E16F0F2620F607007A2218 /* PopupListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E16F0E2620F607007A2218 /* PopupListTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +34,6 @@
 		978E208F25FD21A800318B98 /* Popcorn */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Popcorn; path = ../Popcorn; sourceTree = "<group>"; };
 		97BD5625261628FC002C8A45 /* PopcornIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornIcon.swift; sourceTree = "<group>"; };
 		97C853DF25FA5FD300D6BB2B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		97C853E325FA601000D6BB2B /* PopupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupButton.swift; sourceTree = "<group>"; };
-		97C853E425FA601000D6BB2B /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		97C853E525FA601000D6BB2B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		97C853E625FA601000D6BB2B /* PromptButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptButtons.swift; sourceTree = "<group>"; };
 		97C853EC25FA602200D6BB2B /* GetTextPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTextPrompt.swift; sourceTree = "<group>"; };
 		97C853ED25FA602200D6BB2B /* MessagePrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePrompt.swift; sourceTree = "<group>"; };
 		97C853EE25FA602200D6BB2B /* ButtonsPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsPrompt.swift; sourceTree = "<group>"; };
@@ -47,7 +41,9 @@
 		97C853FB25FA615200D6BB2B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		97C8540125FA87BD00D6BB2B /* Utils+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+Colors.swift"; sourceTree = "<group>"; };
 		97C8540625FA8EC500D6BB2B /* MessageBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBanner.swift; sourceTree = "<group>"; };
-		97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerButtons.swift; sourceTree = "<group>"; };
+		97E16F062620EA84007A2218 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
+		97E16F0B2620EBC0007A2218 /* ReadMeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeTab.swift; sourceTree = "<group>"; };
+		97E16F0E2620F607007A2218 /* PopupListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupListTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				9754504925F94A6F009C890F /* PopcornExampleApp.swift */,
-				97C853DD25FA5F8B00D6BB2B /* MainViews */,
-				97C853DE25FA5F9600D6BB2B /* PopupViews */,
+				97C853DD25FA5F8B00D6BB2B /* Views */,
 				9754505925F94AAE009C890F /* Assets */,
 				97C8540025FA87AC00D6BB2B /* Utils */,
 				9754504F25F94A71009C890F /* Preview Content */,
@@ -121,13 +116,14 @@
 			path = IconViews;
 			sourceTree = "<group>";
 		};
-		97C853DD25FA5F8B00D6BB2B /* MainViews */ = {
+		97C853DD25FA5F8B00D6BB2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				97C853DF25FA5FD300D6BB2B /* MainView.swift */,
-				97C853E225FA5FD700D6BB2B /* MainViewElements */,
+				97C853E225FA5FD700D6BB2B /* MenuViews */,
+				97C853DE25FA5F9600D6BB2B /* PopupViews */,
 			);
-			path = MainViews;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		97C853DE25FA5F9600D6BB2B /* PopupViews */ = {
@@ -141,16 +137,14 @@
 			path = PopupViews;
 			sourceTree = "<group>";
 		};
-		97C853E225FA5FD700D6BB2B /* MainViewElements */ = {
+		97C853E225FA5FD700D6BB2B /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
-				97C853E425FA601000D6BB2B /* BackgroundView.swift */,
-				97C853E525FA601000D6BB2B /* ContentView.swift */,
-				97C853E625FA601000D6BB2B /* PromptButtons.swift */,
-				97C8540C25FACE6A00D6BB2B /* BannerButtons.swift */,
-				97C853E325FA601000D6BB2B /* PopupButton.swift */,
+				97E16F062620EA84007A2218 /* TabMenu.swift */,
+				97E16F0E2620F607007A2218 /* PopupListTab.swift */,
+				97E16F0B2620EBC0007A2218 /* ReadMeTab.swift */,
 			);
-			path = MainViewElements;
+			path = MenuViews;
 			sourceTree = "<group>";
 		};
 		97C8540025FA87AC00D6BB2B /* Utils */ = {
@@ -237,16 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C853E825FA601000D6BB2B /* BackgroundView.swift in Sources */,
 				97BD5626261628FC002C8A45 /* PopcornIcon.swift in Sources */,
-				97C853E725FA601000D6BB2B /* PopupButton.swift in Sources */,
-				97C853E925FA601000D6BB2B /* ContentView.swift in Sources */,
+				97E16F072620EA84007A2218 /* TabMenu.swift in Sources */,
 				97C8540225FA87BD00D6BB2B /* Utils+Colors.swift in Sources */,
 				97C8540725FA8EC500D6BB2B /* MessageBanner.swift in Sources */,
 				97C853F225FA602200D6BB2B /* ButtonsPrompt.swift in Sources */,
-				97C8540D25FACE6A00D6BB2B /* BannerButtons.swift in Sources */,
-				97C853EA25FA601000D6BB2B /* PromptButtons.swift in Sources */,
 				97C853F125FA602200D6BB2B /* MessagePrompt.swift in Sources */,
+				97E16F0C2620EBC0007A2218 /* ReadMeTab.swift in Sources */,
+				97E16F0F2620F607007A2218 /* PopupListTab.swift in Sources */,
 				97C853F025FA602200D6BB2B /* GetTextPrompt.swift in Sources */,
 				97C853E025FA5FD300D6BB2B /* MainView.swift in Sources */,
 				9754504A25F94A6F009C890F /* PopcornExampleApp.swift in Sources */,
