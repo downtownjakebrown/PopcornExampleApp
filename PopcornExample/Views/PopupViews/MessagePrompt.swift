@@ -26,13 +26,13 @@ struct MessagePrompt: View {
             buttonTextColor: .white,
             buttonFill: LinearGradient(gradient: .red, startPoint: .top, endPoint: .bottom),
             buttonLoading: false,
-            buttonAction: { popcorn.dismissCurrentPopup() },
+            buttonAction: { popcorn.dismissCurrentPrompt() },
             
             dragEnabled: true,
-            dragDismissAction: { popcorn.dismissCurrentPopup() },
+            dragDismissAction: { popcorn.dismissCurrentPrompt() },
             
             backgroundFill: Color.white,
-            backgroundTapAction: { popcorn.dismissCurrentPopup() },
+            backgroundTapAction: { popcorn.dismissCurrentPrompt() },
             
             cornerStyle: .capsule
             

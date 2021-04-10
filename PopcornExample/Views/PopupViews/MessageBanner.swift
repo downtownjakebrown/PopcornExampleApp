@@ -36,7 +36,7 @@ struct MessageBanner: View {
             bodyTextColor: .black,
             
             dragEnabled: true,
-            dragDismissAction: { popcorn.currentBanner = nil },
+            dragDismissAction: { popcorn.dismissCurrentBanner() },
             
             bannerFill: Color.white,
             bannerExpanded: bannerExpanded,

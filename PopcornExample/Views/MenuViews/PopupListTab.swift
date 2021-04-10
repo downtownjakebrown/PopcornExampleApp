@@ -59,7 +59,7 @@ fileprivate struct PopupListButtons: View {
                 gradient: .green,
                 imageName: "message.circle.fill"
             ) {
-                popcorn.currentPopup = MessagePrompt.self
+                popcorn.currentPrompt = MessagePrompt.self
             }.frame(height: 100)
         
             PopupListButton(
@@ -68,7 +68,7 @@ fileprivate struct PopupListButtons: View {
                 gradient: .orange,
                 imageName: "rectangle.fill.on.rectangle.fill.circle.fill"
             ) {
-                popcorn.currentPopup = ButtonsPrompt.self
+                popcorn.currentPrompt = ButtonsPrompt.self
             }.frame(height: 100)
 
             PopupListButton(
@@ -77,7 +77,7 @@ fileprivate struct PopupListButtons: View {
                 gradient: .red,
                 imageName: "ellipsis.circle.fill"
             ) {
-                popcorn.currentPopup = GetTextPrompt.self
+                popcorn.currentPrompt = GetTextPrompt.self
             }.frame(height: 100)
         
             PopupListButton(
@@ -110,6 +110,9 @@ fileprivate struct PopupListButton: View {
     
     /// The view body
     var body: some View {
+        
+        
+        
         Button(action: {
             onTap()
         }) {

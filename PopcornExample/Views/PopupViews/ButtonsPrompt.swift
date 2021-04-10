@@ -23,21 +23,21 @@ struct ButtonsPrompt: View {
             button1TextColor: .white,
             button1Fill: LinearGradient(gradient: .red, startPoint: .top, endPoint: .bottom),
             button1Loading: false,
-            button1Action: { popcorn.dismissCurrentPopup() },
+            button1Action: { popcorn.dismissCurrentPrompt() },
             
             button2Text: "No",
             button2TextColor: .white,
             button2Fill: LinearGradient(gradient: .blue, startPoint: .top, endPoint: .bottom),
             button2Loading: false,
-            button2Action: { popcorn.dismissCurrentPopup() },
+            button2Action: { popcorn.dismissCurrentPrompt() },
             
             buttonStyle: .verticalStack,
             
             dragEnabled: true,
-            dragDismissAction: { popcorn.dismissCurrentPopup() },
+            dragDismissAction: { popcorn.dismissCurrentPrompt() },
             
             backgroundFill: Color.white,
-            backgroundTapAction: { popcorn.dismissCurrentPopup() },
+            backgroundTapAction: { popcorn.dismissCurrentPrompt() },
             
             cornerStyle: .capsule
             
