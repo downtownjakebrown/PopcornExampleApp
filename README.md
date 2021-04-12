@@ -1,4 +1,4 @@
-<img height="300" src="./PopcornExample/Assets/Assets.xcassets/PopcornIconReadme.png">
+<img height="300" src="./PopcornExample/Assets/Assets.xcassets/PopcornIconReadme.imageset/PopcornIconReadme.png">
 
 #  Popcorn Example App
 
